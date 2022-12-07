@@ -1,8 +1,9 @@
-import { getProducts, addProduct } from './crud.js';
+import { getProducts, addProduct, deleteTask } from './crud.js';
 
 getProducts();
 
 window.addProduct = addProduct
+window.deleteTask = deleteTask
 
 // Guardar elementos en el local storage:
 //localStorage.setItem("name", "Alejandro")

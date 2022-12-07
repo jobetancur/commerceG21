@@ -32,6 +32,14 @@ function addProduct(id) {
         })
 }
 
+function deleteTask (id) {
+    let productsDelete = JSON.parse(localStorage.getItem('products'))
+    let products = productsDelete.filter(element => element.id !== id)
+    localStorage.clear()
+    localStorage.setItem('products', JSON.stringify(products))
+    location.reload()
+}
+
 pushProducts(productStorage)
 
-export { getProducts, addProduct }
+export { getProducts, addProduct, deleteTask }
