@@ -1,0 +1,29 @@
+import { getProducts, addProduct } from './crud.js';
+
+getProducts();
+
+window.addProduct = addProduct
+
+// Guardar elementos en el local storage:
+//localStorage.setItem("name", "Alejandro")
+//localStorage.setItem("lastname", "Betancur")
+
+// Obtener un valor del LocalStorage
+//console.log( localStorage.getItem("name") );
+
+// Eliminar un valor del Local Storage
+//localStorage.removeItem("lastname")
+
+// Limpiar todas las claves del Local Storage
+//localStorage.clear()
+
+//const user = { name: "Pepito" }
+
+// Convertir el objeto a string para poder guardarlo.
+//localStorage.setItem("user", JSON.stringify(user))
+
+//const userFromLocalStorage = localStorage.getItem("user")
+
+//console.log(userFromLocalStorage)
+
+//console.log(JSON.parse(userFromLocalStorage))
